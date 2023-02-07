@@ -1,0 +1,24 @@
+---
+import '../styles/scss/main.scss'
+import BaseHead from '../components/BaseHead.astro'
+import BaseHeader from '../components/BaseHeader.astro'
+export interface Props {
+  title: string
+  description: string
+  author: string
+}
+const { title, description, author } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} author={author}/>
+  </head>
+  <body>
+    <BaseHeader />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
