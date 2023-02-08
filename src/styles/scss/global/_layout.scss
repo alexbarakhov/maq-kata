@@ -1,0 +1,12 @@
+/* Layout */
+
+body {
+  min-height: 100vh;
+  color: $base-font-color;
+  background-color: $color-light;
+}
+
+.container {
+  width: min(100% - ($space-m * 2), $container-width);
+  margin-inline: auto;
+}

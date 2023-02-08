@@ -1,0 +1,38 @@
+/* Typography */
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+}
+
+h1,
+.h1-like {
+  font-size: $font-size-h1;
+  font-weight: $bold-font-weight;
+  line-height: $line-height-h1;
+  letter-spacing: $heading-letter-spacing;
+  margin-bottom: $space-m;
+}
+
+h2,
+.h2-like {
+  font-size: $font-size-h2;
+  font-weight: $bold-font-weight;
+  line-height: $line-height-h2;
+  letter-spacing: $heading-letter-spacing;
+  margin-bottom: $space-m;
+}
+
+p,
+.p-like {
+  font-size: $font-size-body;
+  font-weight: $base-font-weight;
+  line-height: $line-height-body;
+  margin-bottom: $space-m;
+}

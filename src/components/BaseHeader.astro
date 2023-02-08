@@ -1,10 +1,20 @@
-<header class="header">
+<header class="BaseHeader">
   <div class="container">
-    header
+    <a class="BaseHeader-logoLink" href="/">
+      <img src="/assets/images/equalizer.svg" alt="Equalizer Logo" >
+    </a>
   </div>
 </header>
 
 <style lang="scss">
   @import '../styles/scss/abstracts/_variables';
-  @import '../styles/scss/abstracts/_mixins';
+
+  .BaseHeader {
+    padding-block: $space-xl;
+
+    &-logoLink {
+      display: block;
+      max-width: 147px;
+    }
+  }
 </style>

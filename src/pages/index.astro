@@ -7,10 +7,54 @@ import Layout from '../layouts/BaseLayout.astro'
   description="Kata de maqueta - Landing page"
   author="Alex Barakhov"
 >
-  lolo
+
+  <section class="Hero">
+    <div class="container">
+      <h1>We make your music sound extraordinary.</h1>
+      <p>A system audio equalizer specifically designed for Android and iOS. Freely tune the way your music sounds with a professional grade parametric EQ & volume mixer. Control bass, mids, treble, gain control, reverb, and more!</p>
+    </div>
+  </section>
+  <section class="Intro">
+    <div class="Intro-container">
+      <img class="Intro-device" src="/assets/images/intro-device.png" alt="device image">
+    </div>
+  </section>
 </Layout>
 
 <style lang="scss">
   @import '../styles/scss/abstracts/_variables';
-  @import '../styles/scss/abstracts/_mixins';
+  /*Local Variables */
+  $device-image-translate: 100px;
+  $intro-container-radius: 12px;
+
+  body {
+    background-image: url('/assets/images/hero-bg.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 280px;
+  }
+  .Hero {
+    padding-top: 14px;
+    padding-bottom: 68px;
+  }
+
+  .Intro {
+    padding-top: $device-image-translate;
+
+    &-container {
+      background-color: $color-dark;
+      border-top-left-radius: $intro-container-radius;
+      border-top-right-radius: $intro-container-radius;
+      background-image: url('/assets/images/intro-bg.svg');
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 280px;
+    }
+    &-device {
+      display: block;
+      max-width: 208px;
+      margin-inline: auto;
+      transform: translateY(-$device-image-translate);
+    }
+  }
 </style>

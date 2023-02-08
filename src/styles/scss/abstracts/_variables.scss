@@ -1,13 +1,5 @@
 /* Variables */
 
-// Breakpoints
-
-$breakpoints: (
-  sm: 480px,
-  md: 768px,
-  lg: 1024px,
-);
-
 // Colors
 
 $color-primary: #66e2dc;
@@ -22,8 +14,23 @@ $base-font-family: 'IBM Plex Sans', sans-serif;
 $base-font-size: 100%;
 $base-font-color: $color-dark;
 
-$base-font-weight: 400;
 $base-line-height: 1.25;
+
+$base-font-weight: 400;
+$bold-font-weight: 700;
+
+$heading-letter-spacing: -0.45px;
+
+// Headings
+
+$font-size-h1: clamp(2.5rem, 6.53vw + 0.97rem, 5.5rem);
+$line-height-h1: clamp(3rem, 5.44vw + 1.72rem, 5.5rem);
+
+$font-size-h2: clamp(2rem, 1.09vw + 1.74rem, 2.5rem);
+$line-height-h2: clamp(2.5rem, 1.63vw + 2.12rem, 3.25rem);
+
+$font-size-body: clamp(1rem, 0.54vw + 0.87rem, 1.25rem);
+$line-height-body: clamp(1.25rem, 1.9vw + 0.8rem, 2.13rem);
 
 // Spacing
 
@@ -32,3 +39,7 @@ $space-s: 16px;
 $space-m: 24px;
 $space-l: 32px;
 $space-xl: 40px;
+
+// Layout
+
+$container-width: 1110px;
